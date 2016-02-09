@@ -277,9 +277,34 @@
         getTriangle();
       }); // end of child function for question one
 
-      $("#q2button").on("click", function() {
-        $("#q2result").html("answer two!");
-      });
+      // question 2
+            function getFoobar(){
+            var number = Number (1);
+            for (var i = Number (1); i <= 100; i++) {
+
+              //% = when i is divisible by 3 and the remainder is 0
+              if (i % 3 === 0 && i % 5 === 0) {
+                document.write("FooBar" + "<br>");
+              }
+              else if (i % 3 === 0) {
+                document.write("Foo" + "<br>");
+              }
+              else if (i % 5 === 0) {
+                document.write("Bar" + "<br>");
+              }
+              else {
+                document.write(i + "<br>");
+              }
+            }
+
+              $("#q2result").html(number);
+            }
+
+            $("#q2button").on("click", function() {
+              getFoobar();
+            });
+
+
       $("#q3button").on("click", function() {
         $("#q3result").html("answer three!");
       });
