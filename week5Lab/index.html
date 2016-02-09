@@ -157,35 +157,35 @@
   </div> -->
 
   <script>
-    $(document).ready(function() {
-      // question 1
-      //thif function prints a triangle of hashtags on a screen
-      function getTriangle(){
+  $(document).ready(function() {
 
-        var str="";
-        // want the string below
-        // #<br/>##<br/>###<br/>####<br/>#####<br/>######<br/>
+        //answer question 1
+        //this function prints a triangle of # to the screen
+        function getTriange() {
 
-        for(var i-=1;i<=6;i++){
-          //write i hashtags + <br/>
-          console.log("i"+i);
-          for(var j=1;j<=i;j++){
+          var str = "";
 
+          //triange height is 6 rows so it goes through 6 times, goes up by 1, and it ends if it is greater than 6
+          for (var i = 1; i <= 6; i++) {
+            //write i stars + <br>
+            //each row we want specific number of #
+            //how many we want is the value of i, i shows how many stars we want, j goes through loop and prints it out
+            for (var j = 1; j <= i; j++) {
+              str = str + "#";
+            }
+            //every row needs html on a new line
+            str = str + "<br>";
+          }
+          //write the traingle to the screen
+          $("#q1result").html(str);
         }
-        console.log("i "+ i +" j "+j);
+
+        $("#q1button").on("click", function() {
+          getTriange();
+        });
 
 
-        }
 
-  $("#q1result").html(str);
-
-      }
-
-
-          $("#q1button").on("click",function(){
-              getTriangle();
-
-          });
 
 
 
