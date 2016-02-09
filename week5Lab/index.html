@@ -19,6 +19,11 @@
       <li role="presentation"><a href="#q2" aria-controls="profile" role="tab" data-toggle="tab">Q2</a></li>
       <li role="presentation"><a href="#q3" aria-controls="messages" role="tab" data-toggle="tab">Q3</a></li>
       <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">Q4</a></li>
+      <li role="presentation"><a href="#q5" aria-controls="settings" role="tab" data-toggle="tab">Q5</a></li>
+      <li role="presentation"><a href="#q6" aria-controls="settings" role="tab" data-toggle="tab">Q6</a></li>
+      <li role="presentation"><a href="#q7" aria-controls="settings" role="tab" data-toggle="tab">Q7</a></li>
+      <li role="presentation"><a href="#q8" aria-controls="settings" role="tab" data-toggle="tab">Q8</a></li>
+      <li role="presentation"><a href="#q9" aria-controls="settings" role="tab" data-toggle="tab">Q9</a></li>
     </ul>
 
     <!-- Tab panes -->
@@ -70,20 +75,147 @@
         </div>
 
       </div>
-      <div role="tabpanel" class="tab-pane" id="q3">...</div>
+      <div role="tabpanel" class="tab-pane" id="q3">
+        <div class="row">
+          <div class="col-md-12">
+            <pre> <!--Pre Code Here -->
+                  Put trial code here
+          </pre>
+          </div>
+
+          <div class="col-md-12"> <!--Da button -->
+
+            <button id="q3button"class="btn btn-success" type="button">Click Here</button>
+          </div>
+
+          <div class="col-md-12"> <!--Da Result -->
+            <div id="q3result">
+
+
+            </div>
+          </div>
+
+
+
+
+      </div>
+    </div>
+
+
       <div role="tabpanel" class="tab-pane" id="q4">...</div>
+      <div role="tabpanel" class="tab-pane" id="q5">...</div>
+      <div role="tabpanel" class="tab-pane" id="q6">...</div>
+      <div role="tabpanel" class="tab-pane" id="q7">...</div>
     </div>
   </div>
 
+<div>
+  <div class="row">
+    <div class="col-md-12">
+      <pre> <!--Pre Code Here -->
+            Put trial code here
+    </pre>
+    </div>
+
+    <div class="col-md-12"> <!--Da button -->
+
+      <button id="q2button"class="btn btn-success" type="button">Click Here</button>
+    </div>
+
+    <div class="col-md-12"> <!--Da Result -->
+      <div id="q2result">
+
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <pre> <!--Pre Code Here -->
+              Put trial code here
+      </pre>
+      </div>
+
+      <div class="col-md-12"> <!--Da button -->
+
+        <button id="q2button"class="btn btn-success" type="button">Click Here</button>
+      </div>
+
+      <div class="col-md-12"> <!--Da Result -->
+        <div id="q2result">
+
+
+        </div>
+      </div>
+
+</div>
+
+
+<!-- <div>
+#<br/>##<br/>###<br/>####<br/>#####<br/>######<br/>
+
+  </div> -->
+
   <script>
     $(document).ready(function() {
+      // question 1
+      //thif function prints a triangle of hashtags on a screen
+      function getTriangle(){
+
+        var str="";
+        // want the string below
+        // #<br/>##<br/>###<br/>####<br/>#####<br/>######<br/>
+
+        for(var i-=1;i<=6;i++){
+          //write i hashtags + <br/>
+          console.log("i"+i);
+          for(var j=1;j<=i;j++){
+
+        }
+        console.log("i "+ i +" j "+j);
+
+
+        }
+
+  $("#q1result").html(str);
+
+      }
+
+
           $("#q1button").on("click",function(){
-              $("#q1result").html("answer one!");
+              getTriangle();
 
           });
+
+
+
+
           $("#q2button").on("click",function(){
               $("#q2result").html("answer two!");
                 });
+
+          $("#q3button").on("click",function(){
+              $("#q3result").html("answer three!");
+                      });
+          $("#q4button").on("click",function(){
+            $("#q4result").html("answer four!");
+            });
+              $("#q5button").on("click",function(){
+                $("#q5result").html("answer five!");
+                  });
+            $("#q6button").on("click",function(){
+              $("#q6result").html("answer five!");
+            });
+            $("#q7button").on("click",function(){
+                $("#qresult").html("answer five!");
+                  });
+            $("#q8button").on("click",function(){
+              $("#q8result").html("answer five!");
+                        });
+              $("#q9button").on("click",function(){
+                $("#q9result").html("answer five!");
+                      });
+
 
 
     });
