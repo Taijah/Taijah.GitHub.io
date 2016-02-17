@@ -8,7 +8,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div> JAVASCRIPT QUESTIONS - WEEK 3 - TAIJAH </div>
+  <h1> JAVASCRIPT QUESTIONS - WEEK 3 - TAIJAH </h1>
 <div>
 
 
@@ -30,30 +30,49 @@ else if ( userAge < 0 || userAge > 200)
 }
 else
 </div>
+
 <div>
+  Question 2 :
 
+  Click <a href="JSQuestionsWeek3/ch3Q2.html"> Here </a> to see timesTable
 
-
-
+  <p>  We use a for loop to calculate from 1 * 12 up to 12 * 12. The results are written to the page with document.write().
+    What's important to note here is the effect of the order of precedence; the concatenation operator
+     (the +) has a lower order of precedence than the multiplication operator, *.
+    This means that the timesBy * timesTable is done before the concatenation,
+    which is the result we want. If this were not the case, we'd have to put the calculation in
+    parentheses to raise its order of precedence.<p>
 
 
 </div>
 <div>
-  Question 2 :
-
+  question 3 
+  <html>
+  <body>
   <script language=JavaScript>
-  var timesTable = 12;
-  var timesBy;
-
-  for (timesBy = 1; timesBy < 13; timesBy++)
+  function writeTimesTable(timesTable, timesByStart, timesByEnd)
   {
-   document.write(timesTable + " * " + timesBy + " = " + timesBy * timesTable +
-      "<br>");
-    
+     for (;timesByStart <= timesByEnd; timesByStart++)
+     {
+        document.write(timesTable + " * " + timesByStart + " = " +
+           timesByStart * timesTable + "<br>");
+     }
   }
 
+  writeTimesTable(4,4,9);
+  </script>
+  </body>
+  </html>
 
-
+  We've declared our function, calling it writeTimesTable(), and given it three parameters. The first is the times table we want to write,
+   the second is the start point, and the third is the number it should go up to.
+  We've modified our for loop. First we don't need to initialize any variables, so the initialization
+   part is left blank—we still need to put a semicolon in, but there's no code before it.
+   The for loop continues while the timesByStart parameter is less than or equal to the timesByEnd parameter. You can see that, as with a variable, we can modify parameters—in this case, timesByStart is incremented by one for each iteration through the loop.
+  The code to display the times table is much the same. For the function's code to be executed,
+   we now actually need to call it, which we do in the line
+  writeTimesTable(4,4,9);
+  This will write the 4 times table starting at four times four and ending at nine times four.
 </div>
 
 
