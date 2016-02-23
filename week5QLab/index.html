@@ -349,12 +349,33 @@ function countBs(bString) {
   $("#q4result").html("x");
 
       });
+
       $("#q5button").on("click", function() {
         $("#q5result").html("answer five!");
       });
+
+$(document).ready(function(){
+
+  function range (start, end){
+    var arr={};
+    arr.push(1);
+
+    return arr;
+
+}
+
+
+
+
       $("#q6button").on("click", function() {
-        $("#q6result").html("answer six!");
+        alert("6")
+        //range(3,5);
+        var rangeAnswer= range();
+
+        //$("#q6result").html("answer six!");
+
       });
+
       $("#q7button").on("click", function() {
         $("#q7result").html("answer seven!");
       });
