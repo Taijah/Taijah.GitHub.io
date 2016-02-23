@@ -327,8 +327,27 @@
       $("#q3button").on("click", function() {
         chessBoard();
       });
+
+
+function countBs(bString) {
+        var count = 0;
+        for (var i = 0; i < bString.length; i++) {
+          if (bString.charAt(i) == 'B') {
+            count = (count + 1);
+          }
+        }
+        return count;
+      }
+
+
+
       $("#q4button").on("click", function() {
-        $("#q4result").html("answer four!");
+
+        var userInput = prompt("");
+        var x = countBs(userInput);
+
+  $("#q4result").html("x");
+
       });
       $("#q5button").on("click", function() {
         $("#q5result").html("answer five!");
