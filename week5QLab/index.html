@@ -26,7 +26,7 @@
       <li role="presentation"><a href="#q9" aria-controls="settings" role="tab" data-toggle="tab">Q9</a></li>
     </ul>
 
-    <!-- Tab panes -->
+    <!-- Tab panels -->
     <div class="tab-content">
       <!-- Question 1 -->
       <div role="tabpanel" class="tab-pane active" id="q1">
@@ -303,6 +303,17 @@
             $("#q2button").on("click", function() {
               getFoobar();
             });
+          // question3 answer
+            function chessBoard() {
+        var size = prompt("6");
+        var line = '';
+        var print = "";
+        var i = 0;
+
+        for (i = 0; i < size / 2; i++) {
+          line = print + line + '# ';
+        }
+
 
 
       $("#q3button").on("click", function() {
