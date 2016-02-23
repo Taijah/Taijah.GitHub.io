@@ -305,7 +305,7 @@
             });
           // question3 answer
             function chessBoard() {
-        var size = prompt("6");
+        var size = prompt("5");
         var line = '';
         var print = "";
         var i = 0;
@@ -313,11 +313,20 @@
         for (i = 0; i < size / 2; i++) {
           line = print + line + '# ';
         }
+                for (i = 0; i < size; i++) {
+          if (i % 2 === 0) {
+            print = print + (' ' + line) + "<br/>";
+          } else {
+            print = print + (line) + "<br/>";
+          }
+        }
 
-
+        $("#q3result").html("print");
+      }
 
       $("#q3button").on("click", function() {
-        $("#q3result").html("answer three!");
+        chessBoard();
+
       });
       $("#q4button").on("click", function() {
         $("#q4result").html("answer four!");
