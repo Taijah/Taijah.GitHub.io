@@ -278,34 +278,29 @@
       }); // end of child function for question one
 
       // question 2
-            function getFoobar(){
-            var number = Number (1);
-            for (var i = Number (1); i <= 100; i++) {
+       function printFooBar() {
+        var print = "";
+        var number = Number(1);
+        for (i = Number(1); i <= 100; i++) {
+          if (i % 3 == 0 && i % 5 == 0) {
+            print = print + "FooBar" + "<br/>";
+          } else if (i % 3 == 0) {
+            print = print + "Foo" + "<br/>";
+          } else if (i % 5 == 0) {
+            print = print + "Bar " + "<br/>";
+          } else {
+            print = print + i + "<br/>";
+          }
+        }
+        $("#q2result").html(print);
+      }
+      $("#q2button").on("click", function() {
+        printFooBar();
+      });
 
-              //% = when i is divisible by 3 and the remainder is 0
-              if (i % 3 === 0 && i % 5 === 0) {
-                document.write("FooBar" + "<br>");
-              }
-              else if (i % 3 === 0) {
-                document.write("Foo" + "<br>");
-              }
-              else if (i % 5 === 0) {
-                document.write("Bar" + "<br>");
-              }
-              else {
-                document.write(i + "<br>");
-              }
-            }
-
-              $("#q2result").html(number);
-            }
-
-            $("#q2button").on("click", function() {
-              getFoobar();
-            });
           // question3 answer
             function chessBoard() {
-        var size = prompt("5");
+        var size = prompt("Please Enter A number");
         var line = '';
         var print = "";
         var i = 0;
@@ -321,7 +316,7 @@
           }
         }
 
-        $("#q3result").html("print");
+        $("#q3result").html(print);
       }
 
       $("#q3button").on("click", function() {
@@ -343,36 +338,52 @@ function countBs(bString) {
 
       $("#q4button").on("click", function() {
 
-        var userInput = prompt("");
+        var userInput = prompt("Type many capital B's!");
         var x = countBs(userInput);
 
-  $("#q4result").html("x");
+  $("#q4result").html("t");
 
       });
 
-      $("#q5button").on("click", function() {
-        $("#q5result").html("answer five!");
-      });
+function countChar(cString, charMatch) {
+        var count = 0;
+        for (var i = 0; i < cString.length; i++) {
+          if (cString.charAt(i) == charMatch) {
+            count = (count + 1);
+          }
+        }
+        return count;
+      }
+      $("#q5button").on("click", function() {
+        var inputOne = prompt("");
+        var inputTwo = prompt("")
+        var t = countChar(inputOne, inputTwo)
+        $("#q5result").html(t);
+      });
+
+
 
 $(document).ready(function(){
 
   function range (start, end){
-    var arr={};
-    arr.push(1);
+    var arr=[];
+    //arr.push(1);
+    for (start; start <= end; start++){
+      arr.push(start);
+    }
+
 
     return arr;
 
 }
 
-
-
-
       $("#q6button").on("click", function() {
         alert("6")
         //range(3,5);
-        var rangeAnswer= range();
+        var rangeAnswer= range(2,6);
 
-        //$("#q6result").html("answer six!");
+        $("#q6result").html("Answer is: "+rangeAnswer.join());
+  });
 
       });
 
@@ -380,6 +391,7 @@ $(document).ready(function(){
         $("#q7result").html("answer seven!");
       });
       $("#q8button").on("click", function() {
+
         $("#q8result").html("answer eight!");
       });
       $("#q9button").on("click", function() {
