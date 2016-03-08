@@ -3,11 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Taijah HR</title>
+  <title>Code Academy Badges</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<style>
+
+
+.badgesetup{
+  padding-left: 50px;
+
+
+}
+</style>
+<!-- Note to self: align badges so that no more than 4 or 5 in  row -->
 </head>
 
 <body>
@@ -20,10 +31,22 @@
       <!-- Collection of nav links, forms, and other content for toggling -->
       <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="active"><a href="otherProjects/codeAcademy/index.html">Code Academy Badges</a></li>
-          <li class="active"><a href="JSQuestionsWeek3/index.html">JS Questions</a></li>
-          <li class="active"><a href="OtherProjects/Week3Labcopy/index.html">Bootstrap Pages</a></li>
+          <li class="active"><a href="file:///Users/thinds/Desktop/GitHub/Taijah.GitHub.io/index.html">Home</a></li>
+          <li class="dropdown">
+
+
+         <li class="active"><a href="OtherProjects/CodeAcademy/index.html">Code Academy Badges</a></li>
+          <li class="active"><a href="OtherProjects/JSQuestionsWeek3/indexQ1.html">JS Questions</a></li>
+
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Bootstrap Pages<b class="caret"></b></a>
+  <ul role="menu" class="dropdown-menu">
+
+    <li><a href="../twitterBootstrap/Carousel.html">Carousel</a></li>
+    <li> <a href="../twitterBootstrap/Week2/index.html"> Week2</a></li>
+  </ul>
+    </li>
+  </ul>
+        <!--<li class="active"><a href="OtherProjects/Week3Labcopy/index.html">Bootstrap Pages</a></li> -->
         </ul>
       </div>
     </nav>
@@ -35,17 +58,39 @@
       <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
     </ul>
 
-    <!-- Tab panes -->
+    <!-- Tab panels
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane active" id="q1"> </div>
 
       <div role="tabpanel" class="tab-pane" id="q2">...</div>
       <div role="tabpanel" class="tab-pane" id="q3">...</div>
       <div role="tabpanel" class="tab-pane" id="q4">...</div>
-    </div>
+    </div> -->
+
+
 
   </div>
+
   </div>
+  <div id="jsImages" class="badgesetup">
+ <ul>
+<li> <img src="OtherProjects/CodeAcademy/Badges/Badge1.jpg"></li>
+<li> <img src="OtherProjects/CodeAcademy/Badges/Badge2.jpeg"></li>
+<li> <img src="OtherProjects/CodeAcademy/Badges/Badge3.jpeg"></li>
+<li> <img src="OtherProjects/CodeAcademy/Badges/Badge4.jpeg"><li>
+
+
+</ul>
+  </div>
+  <div id="jqImages" class="badgesetup">
+    <ul>
+      <li> <img src="OtherProjects/CodeAcademy/Badges/Badge5.jpeg"><li>
+      <li> <img src="OtherProjects/CodeAcademy/Badges/Badge6.jpeg"><li>
+      <li> <img src="OtherProjects/CodeAcademy/Badges/Badge7.jpeg"><li>
+      <li> <img src="OtherProjects/CodeAcademy/Badges/Badge8.jpeg"><li>
+      <ul>
+
+   </div>
 
   <script>
   $(document).ready(function(){
