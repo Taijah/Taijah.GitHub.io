@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Take An Order</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+
+
+<body id ="wrapper">
+  <div class="container">
+  <nav role="navigation" class="navbar navbar-inverse">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Taijah HR</a>
+    </div>
+  <div id="navbarCollapse" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li> <!-- the home link wont work -->
+      <li class="dropdown">
+
+
+     <li class="active"><a href="OtherProjects/CodeAcademy/index.html">Code Academy Badges</a></li>
+      <li class="active"><a href="OtherProjects/JSQuestionsWeek3/indexQ1.html">JS Questions</a></li>
+    <li>  <a data-toggle="dropdown" class="dropdown-toggle" href="#">Bootstrap Pages<b class="caret"></b></a>
+        <ul role="menu" class="dropdown-menu">
+            <li><a href="OtherProjects/twitterBootstrap/Carousel.html">Carousel</a></li>
+            <li> <a href="./OtherProjects/twitterBootstrap/Week2/index.html"> Week2</a></li>
+          </li>
+          </ul>
+          <li class="active"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> Take An Order <b class="caret"></b></a>
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="#">Regular</a></li>
+              <li><a href="./takeAnOrderBootstrap.html"> Bootstrap</a></li>
+              </li>
+              </ul>
+
+  </ul>
+
+    </ul>
+  </div>
+</div>
+
+  <div id="container">
+  <input id="mySingleLineText" type="text" value="Type Name">
+  <br/><br/>
+  <textarea  id="myTextArea" name="textarea" rows="10" cols="50">To help us,
+    create your new beach outfit, type here what colours and patterns
+    you see yourself wearing</textarea>
+  <br/><br/>
+  <select id="mySelect" name="select">
+    <option value="Swimsuits">Swimsuits</option>
+    <option value="Sandals" selected>Sandals</option>
+    <option value="Sunglasses">Sunglasses/Hats</option>
+    <option value="All">All Items</option>
+  </select>
+  <div id="mySelectMessage"> </div>
+
+  <div id="selectInfo"></div>
+    <br/><br/>
+  <input type="radio" name="item" value="maleswim" checked=""> Swim Trunks
+  <br>
+  <input type="radio" name="item" value="femaleswim"> Bikinis and Swimsuits
+  <br>
+  <input type="radio" name="item" value="uni"> Unisex Accessories
+  <br/><br/>
+  <input type="checkbox" name="choose" value="outfit" checked="">I need a new beach outfit
+  <br>
+  <input type="checkbox" name="choose" value="accessory">I want to accessorize
+  <br/><br/>
+  <button id="myButton" type="button">Click Me!</button>
+  <br/><br/>
+  <div id="log">
+
+  </div>
+</div>
+<script src="js/takeAnOrder.js"></script>
+
+  </div>
+
+
+</body>
+
+</html>
