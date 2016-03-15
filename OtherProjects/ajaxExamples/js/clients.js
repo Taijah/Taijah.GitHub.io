@@ -14,7 +14,7 @@ html+="<tr>"+
 "</tr>";
   }) // each end
 
-  html+="</table">;
+  html+="</table>";
   $("#data").append(html);
   //alert(data);
   //console.dir(data);
