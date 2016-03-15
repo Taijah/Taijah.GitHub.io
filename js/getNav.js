@@ -1,7 +1,9 @@
 //get the files
-$.get("linktopartials"),function(data){
+$.get("http://Taijah.GitHub.io/partials/nav.html"),function(data){
 
 $(document).ready(function(){
 $(".container").prepend(data);
-  
+
+})
+
 })
