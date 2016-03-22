@@ -1,8 +1,10 @@
 $(document).ready(function(){
-$("#getClients").on("click",function(){
+$("#showInfo").on("click",function(){
 
 $.getJSON("http://Taijah.GitHub.io/OtherProjects/ajaxExamples/jsonDatabase/question4.json" ,function(data){
-  var dsExample5 = new Spry.Data.JSONDataSet("../../jsonDatabase/question4.json/array-03.js", { path: "id.name" });
+
+var html="<table class='table table-hover table-striped'>"+
+"<tr><th>Name</th><th>address</th><th>phone</th><th>about</th></tr>";
 
 
 
@@ -13,7 +15,12 @@ $.getJSON("http://Taijah.GitHub.io/OtherProjects/ajaxExamples/jsonDatabase/quest
 
 
 
-
+  html+="<tr>"+
+  "<td>" +item.name +"</td>"+
+  "<td>"+item.address + "</td>"+
+  "<td>"+item.phone+ "</td>"+
+  "<td>"+item.about+ "</td>"+
+  "</tr>";
 
 
 
