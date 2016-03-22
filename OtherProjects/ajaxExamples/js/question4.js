@@ -23,13 +23,9 @@ var html="<table class='table table-hover table-striped'>"+
   "</tr>";
 
 
-
-
-
-
-
   }) // each end
-
+  html+="</table>";
+  $("#data").append(html);
 
 })// get json end
 
