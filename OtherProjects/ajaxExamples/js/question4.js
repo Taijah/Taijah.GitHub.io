@@ -2,22 +2,27 @@ $(document).ready(function(){
 $("#getClients").on("click",function(){
 
 $.getJSON("http://Taijah.GitHub.io/OtherProjects/ajaxExamples/jsonDatabase/question4.json" ,function(data){
-var html="<table class='table table-hover table-striped'>"+
-"<tr><th>Name</th><th>Email</th><th>Company</th></tr>";
+  var dsExample5 = new Spry.Data.JSONDataSet("../../jsonDatabase/question4.json/array-03.js", { path: "id.name" });
+
+
+
+
+
   $.each(data, function(index, item){
   //  $("#data").append(item.name);
 
-html+="<tr>"+
-"<td>" +item.name +"</td>"+
-"<td>"+item.email + "</td>"+
-"<td>"+item.company + "</td>"+
-"</tr>";
+
+
+
+
+
+
+
+
+
+
   }) // each end
 
-  html+="</table>";
-  $("#data").append(html);
-  //alert(data);
-  //console.dir(data);
 
 })// get json end
 
