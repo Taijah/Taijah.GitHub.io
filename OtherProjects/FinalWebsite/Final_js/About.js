@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     //  $(this).text("Click Me!");
 
-$("like").on("click", function() 
+$("like").on("click", function()
 alert("Thank You For Liking Us on Facebok");
 
 
