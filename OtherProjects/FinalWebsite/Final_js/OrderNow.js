@@ -13,11 +13,11 @@ $("#myButton").on("mouseenter", function(){
 
       $(this).text("Click Me!");
 
-})
+});
 // alert to say order is confirmer
 
-$("#confirm").on("Click",function(){
-  alert("Thank You For Ordering Summer Suits! We have sent You a confirmation email!")
+$("#change").on("Click",function(){
+  alert("Your order has been reset")
 
 
 
