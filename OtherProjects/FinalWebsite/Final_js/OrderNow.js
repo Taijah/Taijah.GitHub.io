@@ -17,7 +17,7 @@ $("#myButton").on("mouseenter", function(){
 // alert to say order is confirmer
 
 $("#myButton").on("Click",function(){
-  $(this).alert("Thank You For Ordering Summer Suits! We have sent You a confirmation email!");
+  alert("Thank You For Ordering Summer Suits! We have sent You a confirmation email!")
 
 
 
