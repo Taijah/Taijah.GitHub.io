@@ -1,7 +1,7 @@
 // button to change when mouse is over button
 $("#myButton").on("mouseenter", function(){
 
-  $(this).text("Create Outfit!");
+  $(this).text("Complete Your Order!");
 
 
 })
