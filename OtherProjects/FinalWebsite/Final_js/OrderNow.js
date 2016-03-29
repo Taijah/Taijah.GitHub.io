@@ -15,10 +15,14 @@ $("#myButton").on("mouseenter", function(){
 
 });
 // alert to say order is confirmer
+$(document).ready(function(){
+  $("#change").on("click", function(){
+  alert("Your Order Has been reset!");
 
-$("#change").on("Click",function(){
-  alert("Your order has been reset")
 
 
 
-}); //end
+
+
+  })
+  });
