@@ -1,7 +1,9 @@
 $(document).ready(function(){
 $("#getModels").on("click",function(){
+  console.log("click")
 
-$.getJSON("http://Taijah.GitHub.io/OtherProjects/FinalWebsite/Final_JsonDatabase/Models.json" ,function(data){
+$.getJSON("Final_JsonDatabase/Models.json" ,function(data){
+  console.log("data"+data)
 // wat to code this so its not a table its a profile
 var html="<table class='table table-hover table-striped'>"+
 "<tr><th>Name</th><th>age</th><th>Company</th></tr>";
@@ -12,6 +14,7 @@ html+="<tr>"+
 "<td>" +item.name +"</td>"+
 "<td>"+item.age + "</td>"+
 "<td>"+item.company + "</td>"+
+//"<td>"+item.picture + "</td>"+
 "</tr>";
   }) // each end
 

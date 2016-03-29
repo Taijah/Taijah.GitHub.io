@@ -1,25 +1,28 @@
-$(document).ready(function(){
-$("#showInfo").on("click",function(){
+$.getJSON("jsonDatabase/question4.json", function(data) {
 
-$.getJSON("http://Taijah.GitHub.io/OtherProjects/ajaxExamples/jsonDatabase/question4.json" ,function(data){
-var html="<table class='table table-hover table-striped'>"+
-"<tr><th>Name</th><th>address</th><th>phone</th><th>about</th></tr>";
-  $.each(data, function(index, item){
-  //  $("#data").append(item.name);
+            console.dir(data);
+            var html = "";
 
-html+="<tr>"+
-"<td>" +item.name +"</td>"+
-"<td>"+item.address + "</td>"+
-"<td>"+item.phone+ "</td>"+
-"<td>"+item.about+ "</td>"+
-"</tr>";
-  }) // each end
-  
-  html+="</table>";
-  $("#data").append(html);
+            $.each(data, function(index, item) {
+                html += '<div class="col-md-4">' +
+                  '<div class="Name">' + item.name + '</div>' +
+                  '<div class="company"><small>company </small>' + item.type + '</div>' +
+                  '<div class="address"><small>address</small>' + item.gender + '</div>' +
+                  '<div class="age"><small>age </small>' + item.age + '</div>' +
+                  //deleted commentsContainer
+                  '<div class="panel panel-default">' + //added
+                  '<div class="panel-heading">Renter Comments</div>'; //added
+                $.each(item.comments, function(ind, i) {
+                    html += '<div class="panel-body">' + //added
+                      '<div class="renterName">' + i.username + '</div>' +
+                      '<div class="renterComment">' + i.comment + '</div>' +
+                      '<div class="renterStars">';
 
-})// get json end
 
-}) // click end
 
-})// doc end
+                      '</div>'; //panel body
+                  }) //each comment
+
+                html += '</div>' + //panel
+                  '</div>'; //col-md-4
+              }) //each cat
