@@ -1,3 +1,10 @@
+/*Style for about page */
+.extra{
+ text-decoration-color: blue;
+ font: arial;
+
+}
+
 /* Styling For the Browse Page */
 .collection{
   max-width: 960px;
