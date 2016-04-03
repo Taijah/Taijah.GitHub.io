@@ -4,27 +4,21 @@ $(document).ready(function(){
     $.getJSON("jsonDatabase/question4.json", function(data) {
 
                 console.dir(data);
-                var html = "";
+                  var html="<table class='table table-hover table-striped'>"+
+                "<tr><th>Name</th><th>age</th><th>Company</th></tr>";
+                  $.each(data, function(index, item){
+                  //  $("#data").append(item.name);
 
-                $.each(data, function(index, item) {
-                    html += '<div class="col-md-4">' +
-                      '<div class="Name">' + item.name + '</div>' +
-                      '<div class="company"><small>company </small>' + item.company + '</div>' +
-                      '<div class="address"><small>address</small>' + item.adress + '</div>' +
-                      '<div class="age"><small>age </small>' + item.age + '</div>' +
-                      //deleted commentsContainer
-                      '<div class="panel panel-default">' + //added
-                      '<div class="panel-heading">Renter Comments</div>'; //added
-                    $.each(item.comments, function(ind, i) {
-                        html += '<div class="panel-body">' + //added
-                          '<div class="renterName">' + i.username + '</div>' +
-                          '<div class="renterComment">' + i.comment + '</div>' +
-                          '<div class="renterStars">';
+                html+="<tr>"+
+                "<td>" +item.name +"</td>"+
+                "<td>"+item.phone + "</td>"+
+                "<td>"+item.email + "</td>"+
+                "<td>"+item.address + "</td>"+
+            
+                "</tr>";
+                  }) // each end
 
 
-
-                          '</div>'; //panel body
-                      }) //eeach fact
                       html+="</table>";
                       $("#data").append(html);
 
