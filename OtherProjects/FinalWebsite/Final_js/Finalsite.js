@@ -39,3 +39,5 @@ html+="<tr>"+
 }) // click end
 
 })// doc end
+
+// about js
