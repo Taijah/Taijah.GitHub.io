@@ -1,5 +1,6 @@
 // order now final button
 $(document).ready(function(){
+
 // button to change when mouse is over button
 $("#myButton").on("mouseenter", function(){
 
@@ -20,7 +21,7 @@ $("#myButton").on("mouseenter", function(){
   })
 
   $("#myButton").on("click",function (){
-     //alert("Please Fill in the required space")
+     alert("Please Fill in the required space")
       // alert for final order if not filled out properly
 
   // to put red boxes
