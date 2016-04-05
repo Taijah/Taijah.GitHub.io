@@ -1,6 +1,6 @@
 $(document).ready(function(){
 $("#submitButton").on("click",function (){
-   //alert("Please Fill in the required space")
+   //alert("Please Fill in the required space");
     // alert for final order if not filled out properly
 
 // to put red boxes
@@ -20,10 +20,10 @@ var errors = $(".has-error");
                 sendConfirmation();
               }
 
-          
+          }) //click
 
 
-function sendConfirmation{
+function sendConfirmation(){
 //make an object to record data for database
 var order={};
 var formData = $("input, select");
@@ -31,11 +31,13 @@ var formData = $("input, select");
 formData.each(function(){
   //get the id
     var id = $(this).attr("id");
-    /set the ofeld and the value
+    //set the ofeld and the value
     order[id] = $(this).val();
 })
 
-}); // click end
+ alert("sendin to our database" + JSON.stringify(order));
+ $("#successMsg").html("Order Received<br></br> ");
 
+} // end conf.
 
- }); // doc end
+}) //doc end

@@ -12,7 +12,7 @@ $("#myButton").on("mouseenter", function(){
 
       $(this).text("Click Me!");
 
-});
+}); //doc end
 
 // alert to say order is confirmed
 
