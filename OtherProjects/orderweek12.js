@@ -1,7 +1,7 @@
-
+$(document).ready(function(){
 $("#submitButton").on("click",function (){
-  // alert("Please Fill in the required space")
-   }) // alert for final order if not filled out properly
+   //alert("Please Fill in the required space")
+    // alert for final order if not filled out properly
 
 // to put red boxes
  $("input, select").filter(function(){
@@ -11,14 +11,14 @@ $("#submitButton").on("click",function (){
 
 // to remove the red error
  $("input, select").filter(function(){
-return !this.value;
- }).closest("div").removeClass("has-error") );
+return this.value;
+ }).closest("div").removeClass("has-error") ;
 
-var errors = $(.has-error);
+var errors = $(".has-error");
 
  if (!errors){
     alert("no errors")}
 
-})
 
+ });
  });
