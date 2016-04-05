@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 
  // to remove the red error
-  $("input,select").filter(function(){
+  $("input, select").filter(function(){
  return !this.value;
   }).closest("div").removeClass("has-error") );
 
