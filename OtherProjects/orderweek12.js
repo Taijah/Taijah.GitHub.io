@@ -35,7 +35,7 @@ formData.each(function(){
     order[id] = $(this).val();
 })
 
- alert("sendin to our database" + JSON.stringify(order));
+ alert("sending to our database" + JSON.stringify(order));
  $("#successMsg").html("Order Received<br></br> ");
 
 } // end conf.

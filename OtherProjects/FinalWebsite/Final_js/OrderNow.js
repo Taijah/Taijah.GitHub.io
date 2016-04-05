@@ -14,7 +14,7 @@ $("#myButton").on("mouseenter", function(){
 
 
 
-}); //doc end
+}); //doc end ?
 
 // alert to say order is confirmed
 $("#myButton").on("click", function(){
@@ -27,9 +27,11 @@ $("#myButton").on("click", function(){
   alert("Your Order Has been reset!");
   })
 
+// select js
 
 
 
-      // alert for final order if not filled out properly
 
-   });
+
+
+   });// doc end
