@@ -9,9 +9,17 @@ text-align: center;
 .collection{
   max-width: 960px;
   margin-top: 30px;
+  position: relative;
 
 }
 
 .swim{
 margin-left: 40px;
+}
+
+/* order now css  */
+
+.radio-inline{
+display: none;
+
 }

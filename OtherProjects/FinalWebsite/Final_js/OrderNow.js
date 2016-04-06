@@ -14,7 +14,7 @@ $("#myButton").on("mouseenter", function(){
 
 
 
-}); //doc end ?
+}); // end mouse
 
 // alert to say order is confirmed
 $("#myButton").on("click", function(){
@@ -27,7 +27,26 @@ $("#myButton").on("click", function(){
   alert("Your Order Has been reset!");
   })
 
-// select js
+
+// Order Now - radio menus
+
+$("#mySelect").on('change', function(){
+  var choice = $(this).find("option:selected").attr("id");
+
+  $(".radio-inline").hide();
+
+  if(choice == "bikini"){
+    $('.bikini-list').show();
+  }
+
+else if(choice == "accessories"){
+  $('.accessory-list').show();
+}
+
+else if(choice == "trunks"){
+  $('.trunks-list').show();
+}
+});
 
 
 
