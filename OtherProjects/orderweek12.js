@@ -8,7 +8,7 @@ $("#submitButton").on("click",function (){
  return !this.value;
    }).closest("div").addClass("has-error");
 
-
+//
 // to remove the red error
  $("input, select").filter(function(){
 return this.value;
@@ -36,6 +36,7 @@ formData.each(function(){
 })
 
  alert("sending to our database" + JSON.stringify(order));
+ console.log(JSON.stringify(order))
  $("#successMsg").html("Order Received<br></br> ");
 
 } // end conf.
