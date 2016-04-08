@@ -1,4 +1,4 @@
-// order now final button - OG
+// order now final button -
 
 $(document).ready(function(){
 
@@ -20,10 +20,9 @@ $("#submitButton").on("mouseenter", function(){
 
 //$(document).ready(function(){
 $("#submitButton").on("click",function (){
-   //alert("Please Fill in the required space");
-    // alert for final order if not filled out properly
 
-// to put red boxes
+
+// to show red box errors when spaces  are empty
  $("input, select").filter(function(){
  return !this.value;
    }).closest("div").addClass("has-error");
@@ -67,6 +66,7 @@ formData.each(function(){
   //user click button (Order Form)
   $("#submitButton").on("click", function() {
 
+  //inputs for payment info
   var myInput = $("#name").val();
   var securityCode = $('#securityCode').val();
   var expire = $("#expiryYear").val();
@@ -83,8 +83,12 @@ formData.each(function(){
     myCheckValues.push($(this).val());
   }); //each end
 
+//logs for oder reecipt
+// log for type of collections
   $("#log").append("<br>Value of select is: " + mySelect);
+  // radio buttons of collections
   $("#log").append("<br>Value of radio button is: " + myRadio);
+//checkboxes , select a  size
   $("#log").append("<br>Value of checkbox is: " + myCheckValues);
   $("#log").append("<br>Value of input is: " + myInput);
   $("#log").append("<br>Value of input is: " + securityCode);
@@ -100,19 +104,7 @@ formData.each(function(){
 
 
 
-
-
-
-
-
-// reset button on order page
-
-  $("#change").on("click", function(){
-  alert("Your Order Has been reset!");
-  })
-
-
-// Order Now - radio menus
+// Radio button menu's - OrderNow page
 
 $("#mySelect").on('change', function(){
   var choice = $(this).find("option:selected").attr("id");

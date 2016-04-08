@@ -9,10 +9,9 @@ $(document).ready(function(){
 //end
 
 
-// Home Page JS - Glyphicon Button click
+// HOME PAGE JS
+// Glyphicon Button click
 $(document).ready(function(){
-
-
 
 $("#like").on("click", function(){
 alert("Thank You For Liking Us on Facebok");
@@ -21,14 +20,15 @@ alert("Thank You For Liking Us on Facebok");
 });
 
 
-// Models Page Javascript code
+// JAVASCRIPT FOR THE MODELS PAGE
+//Click buttton
 $(document).ready(function(){
 $("#getModels").on("click",function(){
   console.log("click")
 
 $.getJSON("Final_JsonDatabase/Models.json" ,function(data){
   console.log("data"+data)
-// Code  for the table
+// Code  for the table to show up 
 var html="<table class='table table-hover table-striped'>"+
 "<tr><th>Name</th><th>age</th><th>Company</th></tr>";
   $.each(data, function(index, item){
