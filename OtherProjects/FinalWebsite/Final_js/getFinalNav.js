@@ -1,3 +1,4 @@
+// code for Nav
 $.get("http://Taijah.GitHub.io/OtherProjects/FinalWebsite/final_partials/nav.html", function(data) {
 
   $(document).ready(function() {
@@ -5,6 +6,7 @@ $.get("http://Taijah.GitHub.io/OtherProjects/FinalWebsite/final_partials/nav.htm
     $(".container").prepend(data);
 })
 })
+// code for footer 
 $.get("http://Taijah.GitHub.io/OtherProjects/FinalWebsite/final_partials/footer.html", function(foot) {
 
   $(document).ready(function() {
