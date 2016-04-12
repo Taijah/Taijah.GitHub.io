@@ -1,15 +1,18 @@
-/*Style for about page */
+/*Style for home page */
 .extras{
 text-align: center;
  font: arial;
 
 }
 
+
+
 /* Styling For the Browse Page */
 .collection{
 
-
-
+  .browse-footer{
+  margin-left: 50px;
+  }
 
 
 }
@@ -21,4 +24,10 @@ text-align: center;
 .radio-inline{
 display: none;
 
+}
+
+/*style nav */
+
+.navbar navbar-inverse{
+background-color: blue;
 }
